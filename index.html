@@ -438,11 +438,59 @@
         .overlay.show {
             display: block;
         }
+
+        /* Add this to your existing CSS */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+    .image-container {
+        width: 100%;
+    }
+}
+
+/* Add these animation styles to your existing CSS */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+    /* Animation properties */
+    
+}
+
+
+
+
     </style>
 </head>
 <body class="font-poppins">
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/971501234567" target="_blank" class="whatsapp-btn bg-green-500 text-white p-4 rounded-full shadow-lg">
+    <a href="https://wa.me/971502718321" target="_blank" class="whatsapp-btn bg-green-500 text-white p-4 rounded-full shadow-lg">
         <i class="fab fa-whatsapp text-2xl"></i>
     </a>
 
@@ -693,12 +741,9 @@
                     <p class="text-gray-600 mb-6">We understand the importance of accuracy and timeliness when it comes to official paperwork, and we strive to exceed our customers' expectations with every service we provide.</p>
                     <a href="#contact" class="bg-primary hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 btn-hover-effect transform hover:-translate-y-1">Visit Us Today</a>
                 </div>
-                <div class="md:w-1/2 md:pl-12 transform transition-all duration-500 hover:scale-105">
-                    <div class="bg-gradient-to-br from-primary to-blue-800 h-80 rounded-lg flex items-center justify-center relative overflow-hidden">
-                        <i class="fas fa-building text-white text-6xl z-10"></i>
-                        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-secondary rounded-full opacity-20"></div>
-                        <div class="absolute -top-10 -left-10 w-32 h-32 bg-secondary rounded-full opacity-20"></div>
-                    </div>
+                <div class="md:w-1/2 mb-10 md:mb-0 transform transition-all duration-500 hover:scale-105">
+    <img src="/image (4).png" alt="Smart Access Office" class="responsive-image">
+</div>
                 </div>
             </div>
         </div>
@@ -798,7 +843,7 @@
                         <p class="mb-2"><i class="fas fa-location-arrow mr-2"></i> ME11, Mohamed Bin Zayed City, Abu Dhabi</p>
                         <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i> +971 2 123 4567</p>
                         <p class="mb-2"><i class="fas fa-envelope mr-2"></i> info@smartaccess.ae</p>
-                        <p><i class="fas fa-clock mr-2"></i> Open: 8:00 AM - 10:00 PM (Sat-Thu)</p>
+                        <p><i class="fas fa-clock mr-2"></i> Open: 8:00 AM - 10:00 PM (Mond-Sat)</p>
                     </div>
                 </div>
                 
@@ -863,7 +908,6 @@
                     <p class="mb-4">Your trusted partner for all documentation and printing needs in Abu Dhabi.</p>
                     <div class="flex space-x-4">
                         <a href="#" class="hover:text-secondary transition-colors duration-300 transform hover:-translate-y-1"><i class="fab fa-facebook-f text-xl"></i></a>
-                        <a href="#" class="hover:text-secondary transition-colors duration-300 transform hover:-translate-y-1"><i class="fab fa-twitter text-xl"></i></a>
                         <a href="#" class="hover:text-secondary transition-colors duration-300 transform hover:-translate-y-1"><i class="fab fa-instagram text-xl"></i></a>
                         <a href="#" class="hover:text-secondary transition-colors duration-300 transform hover:-translate-y-1"><i class="fab fa-linkedin-in text-xl"></i></a>
                     </div>
@@ -912,14 +956,14 @@
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-clock mr-2 text-secondary"></i>
-                            <span>Open: 8:00 AM - 10:00 PM (Sat-Thu)</span>
+                            <span>Open: 8:00 AM - 10:00 PM (Mon-Sat)</span>
                         </li>
                     </ul>
                 </div>
             </div>
             
             <div class="border-t border-blue-400 mt-8 pt-6 text-center text-sm">
-                <p>&copy; 2023 Smart Access Typing & Photocopying Center. All rights reserved.</p>
+                <p>&copy; 2025 Smart Access Typing & Photocopying Center. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1063,7 +1107,7 @@
                 `Please get back to me at your earliest convenience. Thank you!`;
             
             // Business WhatsApp number (replace with actual business number)
-            const businessNumber = '971501234567';
+            const businessNumber = '971502718321';
             
             // Create WhatsApp URL
             const whatsappURL = `https://wa.me/${businessNumber}?text=${whatsappMessage}`;
